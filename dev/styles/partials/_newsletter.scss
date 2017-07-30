@@ -1,0 +1,64 @@
+
+// NEWSLETTER ****
+#newsletter {
+	padding-top: 10rem;
+}
+
+.newsletter_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	.newsletter_column {
+		width: 50%;
+	}
+	.newsletter_column--left {
+		background: $secondaryColour;
+		p {
+			@include headingText (3rem);
+			letter-spacing: 0.6rem;
+			margin: 13rem 0 13rem 7.5rem;
+			line-height: 4rem;
+			span {
+				font-weight: bolder;
+			}
+		}
+	}
+	.newsletter_column--right {
+		background-image: url("/public/assets/home-page/assets/clock.jpg");
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		form {
+			background: white;
+			width: 82%;
+			padding: 5rem;
+			margin: 0 auto;
+			input {
+				display: block;
+			}
+			input[type=email] {
+				width: 82%;
+				margin: 0 auto;
+				padding: 1.5rem 2.5rem;
+				@include bodyText (300);
+				line-height: 4rem;
+				text-transform: uppercase;
+			}
+			input[type=submit] {
+				@include buttonStyle (36%);
+				margin: 2rem auto 0 auto;
+				&:after {
+					content: "";
+					position: absolute;
+					display: block;
+					width: 50px;
+					height: 50px;
+					background: red;
+					// left: 0;
+					// top: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+@mixin headingText ($font-size) {
+	font-family: $headingFont;
+	font-size: $font-size;
+	color: $headingColour;
+	font-weight: 400;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+}
+
+@mixin bodyText ($font-weight, $color: $mainColour) {
+	font-family: $bodyFont;
+	font-size: 1.4rem;
+	font-weight: $font-weight;
+	color: $color;
+	line-height: 2.4rem;
+}
+
+@mixin buttonStyle ($width) {
+	font-family: $bodyFont;
+	font-size: 1.8rem;
+	background: $secondaryColour;
+	color: white;
+	font-weight: 700;
+	line-height: 4rem;
+	text-align: center;
+	padding: 1rem 2.5rem;
+	border-radius: none;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+	position: relative;
+
+}

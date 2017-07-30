@@ -1,0 +1,82 @@
+
+// BLOG ****
+
+
+article {
+	margin-top: 10rem;
+	.article_image {
+		width: 75%;
+		position: relative;
+		height: 40rem;
+		.article_preview {
+			position: absolute;
+			top: 10%;
+			right: -25%;
+			padding: 5rem 7rem;
+			width: 53%;
+			background: $mainColour;
+			color: white;
+			font-family: $bodyFont;
+			.article_date, .article_title {
+				font-weight: 4rem;
+				font-size: 2.4rem;
+				margin: 1rem 0;
+			}
+			.article_date {
+				text-transform: uppercase;
+				line-height: 4rem;
+				text-align: center;
+			}
+			.article_title {
+				line-height: 3rem;
+			}
+			.article_subtitle {
+				font-size: 1.4rem;
+				font-weight: 30rem;
+				line-height: 2.4rem;
+			}
+			.fa {
+				font-size: 3rem;
+				text-align: right;
+				display: block;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	&:first-child {
+		background-image: url(/public/assets/blog-page/assets/blog1.jpg);
+		background-repeat: no-repeat;
+	}
+	&:nth-child(2) {
+		background-image: url(/public/assets/blog-page/assets/blog2.jpg);
+		background-repeat: no-repeat;
+	}
+	&:last-child {
+		background-image: url(/public/assets/blog-page/assets/blog3.jpg);
+		background-repeat: no-repeat;
+	}
+}
+
+.blog_nav {
+	display: flex;
+	flex-wrap: wrap;
+	a {
+		padding: 2.2rem 2.6rem;
+		border: 1px solid $mainColour;
+		margin: 0.5rem;
+		transition: all 0.3s ease;
+		font-family: $headingFont;
+		color: $headingColour;
+		font-size: 1.8rem;
+		&:hover {
+			color: white;
+			background-color: $secondaryColour;
+			border: 1px solid $secondaryColour;
+		}
+	}
+
+}

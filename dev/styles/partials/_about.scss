@@ -1,0 +1,22 @@
+
+// ABOUT SECTION ****
+#about {
+	padding-top: 10rem;
+}
+.wrapper_about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	.about_text {
+		width: calc(60% - 9rem);
+		margin-right: 9rem;
+		.main-content {
+			margin-top: 3rem;
+			@include bodyText (400);
+		}
+	}
+	.about_image {
+		max-width: 40%;
+	}
+}

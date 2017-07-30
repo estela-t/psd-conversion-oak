@@ -1,0 +1,26 @@
+
+// SKILLS SECTION ****
+#skills {
+	padding-top: 10rem;
+	.main-content {
+		margin-top: 2rem;
+		@include bodyText (400);
+	}
+	.skills_container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 7.5rem;
+		.skills_item {
+			margin-right: 6rem;
+			width: calc(33.3% - 6rem);
+			&:last-child {
+				margin-right: 0;
+			}
+			img {
+				padding-bottom: 2rem;
+				border-bottom: 0.1rem solid $headingColour;
+			}
+		}
+	}
+}

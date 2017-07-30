@@ -1,0 +1,61 @@
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 10px;
+	max-width: 1400px;
+	background-color: $backgroundColour;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: $mainColour;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+h2 {
+	@include headingText (2.4rem);
+	letter-spacing: 0.6rem;
+	position: relative;
+	margin: 0;
+	padding-bottom: 2rem;
+	&:after {
+		content:"";
+		display: block;
+		position: absolute;
+		height: 0.1rem;
+		width: 4rem;
+		bottom: -5%;
+		background-color: $headingColour;
+	}
+}
+
+h3 {
+	@include headingText (1.8rem);
+	letter-spacing: 0.2rem;
+	margin: 2rem 0;
+}
+
+.visually_hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+

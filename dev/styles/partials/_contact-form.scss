@@ -1,0 +1,126 @@
+
+// CONTACT PAGE HEADER ****
+.hero_overlay {
+	width: 45%;
+	height: 83%;
+	background: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	h1 {
+		@include headingText (6rem); 
+		letter-spacing: 0.6rem;
+		position: relative;
+		&:after {
+			content:"";
+			display: block;
+			position: absolute;
+			width: 15%;
+			height: 0.1rem;
+			background: $headingColour;
+			left: 40%;
+			bottom: -2.5rem;
+		}
+	}
+	p {
+		font-family: $bodyFont;
+		font-size: 1.8rem;
+		font-weight: 400;
+		color: $mainColour;
+		line-height: 4rem;
+		margin: 0;
+	}
+}
+
+// CONTACT PAGE FORM ****
+
+.contact_form--wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 10rem;
+	.contact_column--info {
+		width: 20%;
+		.contact_details {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 5rem;
+			img {
+				max-width: 100%;
+				margin-right: 2rem;
+				height: 20%;
+			}
+			h3, p {
+				padding-bottom: 0.5rem;
+				margin: 0;
+			}
+			p {
+				@include bodyText (400, #787878);
+				letter-spacing: 0.1rem;
+			}
+			a {
+				transition: color 0.3s ease;
+				&:hover {
+					color: $secondaryColour;
+				}
+			}
+		}
+	}
+	.contact_column--form {
+		width: 80%;
+		form {
+			display: flex;
+			justify-content: space-between;
+			.form_column {
+				width: 50%;
+			}
+			.form_column--left {
+				margin-right: 3rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			input, textarea {
+				display: block;
+				width: 100%;
+			}
+			input:not(.button), textarea {
+				margin-bottom: 3rem;
+				border: 1px solid #787878;
+				padding: 2rem 2.5rem;
+				&::placeholder {
+					@include bodyText (300, #787878);
+					text-transform: uppercase;
+				}
+				&:focus {
+					outline: none;
+					border: 2px solid $mainColour;
+				}
+			}
+			textarea {
+				resize: none;
+			}
+			input[name=subject] {
+				margin-bottom: 0;
+			}
+			input[type="submit"] {
+				@include buttonStyle (100%);
+				margin-bottom: 0;
+			}
+
+		}
+	}
+}
+
+// input:not(.button), textarea
+// 				input, textarea {
+// 					display: block;
+// 					&::placeholder {
+// 						@include bodyText (300, #787878);
+// 						text-transform: uppercase;
+// 					}
