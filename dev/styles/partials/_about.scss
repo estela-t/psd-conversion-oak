@@ -19,6 +19,9 @@
 	.about_image {
 		max-width: 40%;
 		overflow: hidden;
+		img {
+			max-width: 100%;
+		}
 
 	}
 }

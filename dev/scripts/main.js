@@ -2,12 +2,11 @@
 var oakJs = {};
 
 oakJs.init = function() {
-	oakJs.masonry();
 	oakJs.events();
+	oakJs.masonry();
 };
 
 oakJs.events = function() {
-	oakJs.masonryEvents();
 	oakJs.likesCounter();
 	oakJs.smoothScroll();
 	// reveal skill items on scroll
@@ -41,25 +40,20 @@ oakJs.smoothScroll = function(){
 	});
 };
 
-
 oakJs.masonry = function() {
 	// initiate Isotope
-	var createGrid = function() {
-		var $grid = $('.gallery').isotope({
-			itemSelector: '.gallery_item',
-			layoutMode: 'fitRows'
-		});
-	};
-};
-
-oakJs.masonryEvents = function() {
+	var $grid = $('.gallery').isotope({
+		itemSelector: '.gallery_item',
+		layoutMode: 'fitRows'
+	});
 	$('.nav_portfolio').on('click', 'li', function(){
 		var selector = $(this).attr('data-filter');
-		$('.nav_portfolio li').removeClass('active');
+		// $('.nav_portfolio li').removeClass('active');
 		$grid.isotope({
 			filter: selector
 		});
 	});
+		
 	$('.nav_portfolio').each(function(i,buttons){
 		var $buttons = $(buttons);
 		$buttons.on('click', 'li', function(){
@@ -68,15 +62,6 @@ oakJs.masonryEvents = function() {
 		});
 	});
 };
-
-
-
-	//			 $(this).toggleClass('active');
-
-	// });
-	// return false;
-
-
 
 
 
