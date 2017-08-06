@@ -55,7 +55,7 @@ article {
 		background-image: url(/public/assets/blog-page/assets/blog2.jpg);
 		background-repeat: no-repeat;
 	}
-	&:last-child {
+	&:nth-child(3) {
 		background-image: url(/public/assets/blog-page/assets/blog3.jpg);
 		background-repeat: no-repeat;
 	}

@@ -59,3 +59,22 @@ h3 {
 	overflow: hidden;
 }
 
+
+
+// MEDIA QUERIES ****
+
+@media (max-width: 1200px) {
+	.wrapper {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 940px) {
+	.wrapper {
+		max-width: 710px;
+	}
+
+	body {
+		// background: red;
+	}
+}

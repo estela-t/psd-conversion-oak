@@ -47,11 +47,11 @@ nav {
 				position: absolute;
 				left: 10%;
 				cursor: pointer;
-				opacity: 0; /* hide input */
-				z-index: 2; /* place it over the menu */
+				opacity: 0; 
+				z-index: 2; 
 				&:checked ~ span {
 					opacity: 1;
-					transform: rotate(-45deg) translate(-2px, -1px);
+					transform: rotate(-45deg) translate(-12px, 6px);
 					background: $headingColour;
 				}
 				// middle span
@@ -59,18 +59,19 @@ nav {
 					opacity: 0;
 					transform: rotate(0deg) scale(0.2, 0.2);
 				}
-				// last span
+				// // last span
 				&:checked ~ span:nth-last-child(2) {
 					opacity: 1;
-					transform: rotate(45deg) translate(-5px, -5px);
+					// transform: rotate(45deg) translate(-5px, -5px);
+					transform: rotate(45deg) translate(-15px, -12px);
 				}
 				&:checked ~ ul.test {
-					// transform: scale(1.0, 1.0);
-					transform: translate(100%, 250%);
+					transform: scale(1.0, 1.0);
+					transform: translate(-120%, -90%);
 					color: red;
 					opacity: 1;
 				}
-				&:checked + p {
+				&:checked ~ p {
 					opacity: 0;
 				}
 			}
@@ -86,8 +87,7 @@ nav {
 		margin: 0;
 		justify-content: space-around;
 		transform-origin: 0% 0%;
-		transform: translate(-100%, 0);
-		// transform: translate(-100%, -250%);
+		transform: translate(-120%, -300%);
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 		a {
 			padding: 1rem;
@@ -101,4 +101,22 @@ nav {
 			}
 		}
 	}
+}
+
+// MEDIA QUERIES ****
+
+
+@media (max-width: 940px) {
+	
+}
+
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 480px) {
+
 }
