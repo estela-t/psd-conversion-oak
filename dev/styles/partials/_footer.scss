@@ -66,14 +66,18 @@ footer {
 @media (max-width: 768px) {
 	.footer_wrapper {
 		justify-content: center;
-		align-items: flex-start;
 		max-width: 628px;
+		flex-wrap: wrap;
 		padding: 8rem 0;
 		.footer_column {
 			width: 50%;
 			&:last-child {
 				padding-left: 0;
 			}
+		}
+		.social_column {
+			width: 100%;
+			order: 3;
 		}
 	}
 }
