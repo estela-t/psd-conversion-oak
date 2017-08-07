@@ -48,15 +48,15 @@ article {
 		}
 	}
 	&:first-child {
-		background-image: url(/public/assets/blog-page/assets/blog1.jpg);
+		background-image: url(/assets/blog-page/assets/blog1.jpg);
 		background-repeat: no-repeat;
 	}
 	&:nth-child(2) {
-		background-image: url(/public/assets/blog-page/assets/blog2.jpg);
+		background-image: url(/assets/blog-page/assets/blog2.jpg);
 		background-repeat: no-repeat;
 	}
 	&:nth-child(3) {
-		background-image: url(/public/assets/blog-page/assets/blog3.jpg);
+		background-image: url(/assets/blog-page/assets/blog3.jpg);
 		background-repeat: no-repeat;
 	}
 }

@@ -99,7 +99,17 @@ header {
 	header {
 		.wrapper {
 			max-width: 520px;
+			.hero {
+				width: 660px;
+			}
 		}
+	}
+}
+
+
+@media (max-width: 535px) {
+	.wrapper {
+		max-width: 340px;
 	}
 }
 

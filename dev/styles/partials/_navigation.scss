@@ -68,6 +68,7 @@ nav {
 					transform: scale(1.0, 1.0);
 					transform: translate(-120%, -90%);
 					opacity: 1;
+					z-index: 20 !important;
 				}
 				&:checked ~ p {
 					opacity: 0;
@@ -86,6 +87,7 @@ nav {
 		justify-content: space-around;
 		transform: translate(-120%, -300%);
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+		z-index: 20 !important;
 		a {
 			padding: 1rem;
 			font-size: 1.4rem;
@@ -111,6 +113,9 @@ nav {
 					transform: scale(1.0, 1.0);
 					transform: translate(-103%, 5%);
 				}
+				&:checked header {
+					background: red;
+				}
 			}
 			}
 		}
@@ -126,7 +131,14 @@ nav {
 }
 
 
+@media (max-width: 660px) {
+	nav {
+		max-width: 520px;
+	}
+}
 
-@media (max-width: 480px) {
 
+
+@media (max-width: 535px) {
+	
 }
