@@ -62,13 +62,11 @@ nav {
 				// // last span
 				&:checked ~ span:nth-last-child(2) {
 					opacity: 1;
-					// transform: rotate(45deg) translate(-5px, -5px);
 					transform: rotate(45deg) translate(-15px, -12px);
 				}
-				&:checked ~ ul.test {
+				&:checked ~ ul {
 					transform: scale(1.0, 1.0);
 					transform: translate(-120%, -90%);
-					color: red;
 					opacity: 1;
 				}
 				&:checked ~ p {
@@ -86,7 +84,6 @@ nav {
 		width: 40rem;
 		margin: 0;
 		justify-content: space-around;
-		transform-origin: 0% 0%;
 		transform: translate(-120%, -300%);
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 		a {
@@ -105,16 +102,29 @@ nav {
 
 // MEDIA QUERIES ****
 
-
-@media (max-width: 940px) {
-	
-}
-
-
-
 @media (max-width: 768px) {
-
+	nav {
+		.menu {
+			.hamburger {
+			input {
+				&:checked ~ ul {
+					transform: scale(1.0, 1.0);
+					transform: translate(-103%, 5%);
+				}
+			}
+			}
+		}
+		ul {
+			flex-direction: column;
+			text-align: right;
+			width: 20rem;
+			background: $backgroundColour;
+			transform: translate(45%, 5%);
+			transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+		}
+	}
 }
+
 
 
 @media (max-width: 480px) {

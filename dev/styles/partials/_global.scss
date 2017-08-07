@@ -81,7 +81,13 @@ h3 {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 660px) {
+	.wrapper {
+		max-width: 520px;
+	}
+}
+
+@media (max-width: 535px) {
 	.wrapper {
 		max-width: 340px;
 	}
