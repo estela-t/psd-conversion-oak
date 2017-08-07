@@ -24,3 +24,37 @@
 		}
 	}
 }
+
+// MEDIA QUERIES ****
+
+@media (max-width: 768px) {
+	#skills {
+		.skills_container {
+			margin-top: 7.5rem;
+			.skills_item {
+				margin-right: 6rem;
+				width: calc(50% - 6rem);
+				&:last-child {
+					width: 100%;
+					margin-top: 2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	#skills {
+		.skills_container {
+			.skills_item {
+				margin-right: 0;
+				width: 100%;
+				margin-top: 2rem;
+				&:last-child {
+					// width: 100%;
+					// margin-top: 2rem;
+				}
+			}
+		}
+	}
+}

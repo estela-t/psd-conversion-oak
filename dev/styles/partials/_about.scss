@@ -25,3 +25,32 @@
 
 	}
 }
+
+// MEDIA QUERIES ****
+
+
+@media (max-width: 768px) {
+	#about {
+		padding-top: 4rem;
+	}
+	.wrapper_about {
+		.about_text {
+			width: 100%;
+			margin-right: 0;
+			.main-content {
+			}
+		}
+		.about_image {
+			max-width: 65%;
+			margin: 2rem auto 0 auto;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.wrapper_about {
+		.about_image {
+			max-width: 100%;
+		}
+	}
+}

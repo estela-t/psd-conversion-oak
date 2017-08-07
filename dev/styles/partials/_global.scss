@@ -71,10 +71,18 @@ h3 {
 
 @media (max-width: 940px) {
 	.wrapper {
-		max-width: 710px;
+		max-width: 800px;
 	}
+}
 
-	body {
-		// background: red;
+@media (max-width: 768px) {
+	.wrapper {
+		max-width: 628px;
+	}
+}
+
+@media (max-width: 480px) {
+	.wrapper {
+		max-width: 340px;
 	}
 }
