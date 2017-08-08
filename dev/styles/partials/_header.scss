@@ -37,8 +37,11 @@ header {
 				text-align: right;
 			}
 		}
-		img {
+		.hero_image {
 			max-width: 100%;
+		}
+		.hero_image-responsive {
+			display: none;
 		}
 	}
 }
@@ -73,20 +76,42 @@ header {
 			max-width: 628px;
 			.hero {
 				max-width: 100%;
+				position: relative;
+				.hero_image {
+					display: none;
+				}
+				.hero_image-responsive {
+					display: block;
+					width: 50%;
+					margin: 0;
+					position: absolute;
+					right: 0;
+					top: 25%;
+				}
 				.hero_text {
-					width: 45%;
+					width: 50%;
 					bottom: 40%;
+					background: #F4F4F4;
+					margin:0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					padding: 1.5rem;
+					padding-left: 2rem;
+					box-shadow: 150px 65px 0 $secondaryColour;
 					h1 {
-						font-size: 3.1rem;
-						line-height: 3rem;
+						font-size: 3.4rem;
+						line-height: 4.2rem;
 						&:before {
-							width: 50%;
-							bottom: -26%;
-							right: 0%;
+							display: none;
 						}
 					}
 					.subtitle {
-						font-size: 1.8rem;
+						font-size: 2rem;
+						text-align: left;
 					}
 				}
 			}

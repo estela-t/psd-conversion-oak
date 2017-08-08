@@ -111,7 +111,7 @@ nav {
 			input {
 				&:checked ~ ul {
 					transform: scale(1.0, 1.0);
-					transform: translate(-103%, 5%);
+					transform: translate(-103%, 1%);
 				}
 				&:checked header {
 					background: red;

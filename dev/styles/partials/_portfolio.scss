@@ -2,6 +2,10 @@
 // PORTFOLIO ****
 #portfolio {
 	padding-top: 10rem;
+	.main-content {
+		margin-top: 2rem;
+		@include bodyText (400);
+	}
 }
 .nav_portfolio {
 	display: flex;
@@ -21,6 +25,18 @@
 		&:hover {
 			background: $secondaryColour;
 		}
+		&:first-child {
+			background: $secondaryColour;
+			cursor: default;
+		}
+		span {
+			display: block;
+			width: 2.5rem;
+			height: 0.4rem;
+			background: $headingColour;
+			border-radius: 0.2rem;
+			margin-bottom: 0.4rem;
+		}
 	}
 }
 .active {
@@ -31,8 +47,8 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	.gallery_item {
-		margin: 3rem;
-		width: calc(33.3% - 3rem);
+		margin: 2rem;
+		width: calc(33.3% - 4rem);
 		position: relative;
 		// &:nth-child(1n+3), &:nth-child(n){
 		// 	margin-left: 0;

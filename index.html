@@ -36,11 +36,12 @@
 				</div>
 			</nav>
 			<div class="hero">
-				<img src="/assets/home-page/assets/header.jpg" alt="torso of woman wearing all black">
+				<img src="/assets/home-page/assets/header.jpg" class="hero_image" alt="torso of woman wearing all black">
 				<div class="hero_text">
 					<h1>Pure Elegance</h1>
 					<p class="subtitle">Good Things Are Coming</p>
 				</div>
+				<img src="/assets/home-page/assets/header-crop.jpg" class="hero_image-responsive" alt="torso of woman wearing all black">
 			</div>
 		</div>    <!-- end of wrapper -->
 	</header>
@@ -85,10 +86,15 @@
 	<section id="portfolio">
 		<div class="portfolio_wrapper wrapper">
 			<h2>Our Work</h2>
-			<p class="main-content">Some of the recent projects our team has worked on</p>
+			<p class="main-content">Recent projects our team has worked on</p>
 			<div class="iso-nav">
 				<ul class="nav_portfolio">
-					<li data-filter="*">All</li>
+					<li>
+						<span></span>
+						<span></span>
+						<span></span>
+					</li>
+					<li data-filter="*" class="active">All</li>
 					<li data-filter=".branding">Branding</li>
 					<li data-filter=".web_design">Web Design</li>
 					<li data-filter=".print">Print</li>
@@ -113,7 +119,7 @@
 					<img src="/assets/home-page/assets/portfolio1.jpg" alt="">
 				</div>
 
-				<div class="gallery_item branding web_design">
+				<div class="gallery_item print web_design">
 					<div class="gallery_item--overlay">
 						<div class="gallery_item--likes">
 							<i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -268,7 +274,7 @@
 			<div class="newsletter_column newsletter_column--right">
 				<form action="">
 					<label for="email" class="visually_hidden">Enter your email</label>
-					<input type="email" placeholder="Enter your email" name="email">
+					<input type="email" placeholder="Enter your email" name="email" required>
 					<input type="submit" value="Subscribe">
 				</form>
 			</div>
